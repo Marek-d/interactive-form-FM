@@ -1,0 +1,97 @@
+@media (max-width: 1330px) {
+  main .left-side {
+    min-width: 30vw;
+  }
+  main .left-side .front-card {
+    transform: translateX(20%);
+  }
+  main .left-side .back-card {
+    transform: translateX(40%);
+  }
+}
+@media (max-width: 1210px) {
+  main .left-side .front-card {
+    width: 250px;
+    height: 160px;
+    transform: translateX(5%);
+  }
+  main .left-side .front-card p {
+    margin-top: 0.4em;
+    font-size: 0.8em;
+  }
+  main .left-side .back-card {
+    width: 250px;
+    height: 160px;
+    transform: translateX(5%);
+  }
+  main .left-side .back-card p {
+    top: 4.2em;
+    left: 11em;
+  }
+  main .right-side {
+    justify-content: center;
+  }
+  main .right-side form {
+    margin-right: 0;
+  }
+  main .right-side .complete-container {
+    margin-right: 0;
+  }
+}
+@media (max-width: 750px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  main .left-side {
+    width: 100%;
+    padding: 0 1em;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .left-side .front-card {
+    width: 16.6875em;
+    height: 10.3125em;
+    position: relative;
+    margin-bottom: -35%;
+    top: -4.5em;
+    transform: translateX(-0.8em);
+    z-index: 100;
+  }
+  main .left-side .front-card p {
+    margin-top: 5%;
+    font-size: 1em;
+  }
+  main .left-side .back-card {
+    width: 16.6875em;
+    height: 10.3125em;
+    margin-top: 2em;
+    position: relative;
+    transform: translateX(0.8em);
+  }
+  main .left-side .back-card p {
+    top: 5em;
+    left: 14em;
+  }
+  main .right-side {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+    margin-bottom: 1.5em;
+  }
+  main .right-side form {
+    margin: 0;
+    width: 90%;
+  }
+  main .right-side form input[id=cvc] {
+    width: 10em;
+  }
+  main .right-side .complete-container {
+    width: 90%;
+    margin-right: 0;
+    margin-top: 2em;
+  }
+}/*# sourceMappingURL=query.css.map */

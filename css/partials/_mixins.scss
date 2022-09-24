@@ -1,0 +1,11 @@
+@mixin background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin fontSpacing($spacing: 3px, $fontSize: 1em) {
+    color: $white;
+    font-size: $fontSize;
+    letter-spacing: $spacing;
+}

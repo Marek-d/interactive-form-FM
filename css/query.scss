@@ -1,0 +1,129 @@
+@import "partials/variables";
+
+@media (max-width: 1330px) {
+    main {
+
+        .left-side {
+            min-width: 30vw;
+
+            .front-card {
+                transform: translateX(20%);
+            }
+
+            .back-card {
+                transform: translateX(40%);
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    main {
+
+        .left-side {
+
+            .front-card {
+                width: 250px;
+                height: 160px;
+                transform: translateX(5%);
+
+                p {
+                    margin-top: 0.4em;
+                    font-size: 0.8em;
+                }
+            }
+
+            .back-card {
+                width: 250px;
+                height: 160px;
+                transform: translateX(5%);
+
+                p {
+                    top: 4.2em;
+                    left: 11em;
+                }
+            }
+        }
+
+        .right-side {
+            justify-content: center;
+
+            form {
+                margin-right: 0;
+            }
+
+            .complete-container {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: #{750px}) {
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+
+        .left-side {
+            width: 100%;
+            padding: 0 1em;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .front-card {
+                width: toEm(447-180);
+                height: toEm(245-80);
+                position: relative;
+                margin-bottom: -35%;
+                top: -4.5em;
+                transform: translateX(-0.8em);
+                z-index: 100;
+
+                p {
+                    margin-top: 5%;
+                    font-size: 1em;
+                }
+            }
+
+            .back-card {
+                width: toEm(447-180);
+                height: toEm(245-80);
+                margin-top: 2em;
+                position: relative;
+                transform: translateX(0.8em);
+
+                p {
+                    top: 5em;
+                    left: 14em;
+                }
+            }
+        }
+
+        .right-side {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18%;
+            margin-bottom: 1.5em;
+
+            form {
+                margin: 0;
+                width: 90%;
+
+                input {
+                    &[id=cvc] {
+                        width: 10em;
+                    }
+                }
+            }
+
+            .complete-container {
+                width: 90%;
+                margin-right: 0;
+                margin-top: 2em;
+            }
+        }
+    }
+}

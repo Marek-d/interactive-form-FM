@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/query.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+  <main>
+    <div class="left-side">
+      <div class="front-card">
+        <div class="circle"></div>
+        <div class="circle-small"></div>
+        <p class="card-num-js">0000 0000 0000 0000</p>
+        <div class="user-info">
+          <span id="card-holder-name-js">Jane Appleseed</span>
+          <span id="date-js">00/00</span>
+        </div>
+      </div>
+      <div class="back-card">
+        <p class="cvc-js">000</p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="right-side">
+      <form action="#" id="form">
+        <label for="card-holder-name">CardHolder name</label>
+        <input type="text" id="card-holder-name" name="card-holder-name" placeholder="e.g. Jane Appleseed">
+        <label for="card-number">Card number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="error-message error-format hide">Wrong format, numbers only</p>
+        <div class="card-info">
+          <div>
+            <label for="date">Exp. date (MM/YY)</label>
+            <input type="text" id="date" name="dateMM" placeholder="MM">
+            <input type="text" id="date" name="dateYY" placeholder="YY" >
+            <p class="error-message error-blank-1 hide">Can't be blank</p>
+          </div>
+          <div>
+            <label for="cvc">Cvc</label>
+            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123">
+            <p class="error-message error-blank-2 hide">Can't be blank</p>
+          </div>
+        </div>
+        <input type="submit" value="Confirm">
+      </form>
+
+      <!-- complete state container -->
+      <div class="complete-container hide">
+        <div>
+          <img src="images/icon-complete.svg" alt="completion">
+        </div>
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button>Continue</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
